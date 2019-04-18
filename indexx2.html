@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,9 +20,13 @@
 <div id="map"></div>
 <script>
 	var map;
-	var parks = [
+	var aboutme= [
 		{"park":"Yellowstone","coords":[44.4280,-110.5885]},
-		{"park":"Glacier","coords":[48.7596, -113.7870]}
+        {"park":"Glacier","coords":[48.7596, -113.7870]},
+        {"park":"Toronto","coords":[43.375109,-1158.083654]},
+		{"park":"New York","coords":[40.439631,-1153.980483]},
+		{"park":"columbia","coords":[33.866425,-1160.983765]},
+		{"park":"Virginia Beach","coords":[36.699806,-1156.415450]}
 		];
 
 	function initMap() {
@@ -31,7 +36,7 @@
 			mapTypeId: 'terrain'
 		});
 
-		mashParks(parks);
+		mashParks(aboutme);
 	}
 
 	function mashParks(results) {
@@ -50,7 +55,7 @@
 
 </script>
 <script async defer
-		src="https://maps.googleapis.com/maps/api/js?key=aq">
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTM5RKrtCLpZAj5HU3K3cTvFNB240NsBg&callback=initMap">
 </script>
 </body>
 </html>
